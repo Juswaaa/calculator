@@ -40,3 +40,14 @@ while True:
             print("ERROR! You have zero divisor. Please try again.\n")
     else:
         print("ERROR! Invalid operation number. Please enter a number from 1 to 4.\n")
+
+    # Ask the user if they want to try again
+    while True:
+        answer = input("Do you want to try again? Y/N: ")
+        if answer.upper() == "Y":
+            break
+        elif answer.upper() == "N":
+            print("Thank You!")
+            exit()
+        else:
+            print("Invalid answer, choose Y or N.\n")
